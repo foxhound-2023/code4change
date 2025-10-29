@@ -84,7 +84,6 @@ export default function Home() {
             alignItems: "center",
             marginTop: "40px",
             width: "100%",
-            scrollbarWidth: "thin",
           }}
         >
           {lessons.map((lesson, i) => (
