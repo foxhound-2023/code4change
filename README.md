@@ -76,5 +76,5 @@ Then open your browser at `http://localhost:5173`.
 
 ## 🧑‍💻 Author
 
-**Euel G.**
+**Elu**
 *Created as a personal project to simplify the learning path for coding beginners.*
