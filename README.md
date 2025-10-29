@@ -1,16 +1,80 @@
-# React + Vite
+# Code4Change
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Code4Change** is a beginner-friendly learning platform designed to give newcomers an easy and accessible entry into the world of coding.
+The project focuses on simplicity, user-friendliness, and accessibility — particularly for underprivileged learners who may not have access to expensive resources or complex platforms.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
 
-## React Compiler
+* **Learning Path:** A guided journey of lessons that track user progress using local storage.
+* **Interactive Lessons:** Simple coding questions and YouTube-embedded tutorials for hands-on learning.
+* **Projects Page:** Downloadable PDF projects and solutions covering HTML, CSS, JavaScript, and Python.
+* **About Page:** Highlights the mission to make coding education more inclusive and approachable.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+---
 
-## Expanding the ESLint configuration
+## 🧠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Frontend:** React (Vite)
+* **Routing:** React Router
+* **Storage:** Local Storage for saving progress
+* **Styling:** CSS and Google Fonts
+* **Icons:** Font Awesome
+
+---
+
+## 📂 File Structure
+
+```
+src/
+├── Home.jsx
+├── Lesson.jsx
+├── Projects.jsx
+├── About.jsx
+├── QuestionPage.jsx
+├── LessonButton.jsx
+└── assets/
+    ├── projects.pdf
+    └── solutions.pdf
+```
+
+---
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/<your-username>/code4change.git
+   ```
+2. Navigate into the folder:
+
+   ```bash
+   cd code4change
+   ```
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+4. Run the app:
+
+   ```bash
+   npm run dev
+   ```
+
+Then open your browser at `http://localhost:5173`.
+
+---
+
+## 💡 Mission
+
+> “To empower beginners and underprivileged learners with the tools to start coding — one simple project at a time.”
+
+---
+
+## 🧑‍💻 Author
+
+**Euel G.**
+*Created as a personal project to simplify the learning path for coding beginners.*
