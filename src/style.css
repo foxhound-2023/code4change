@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap');
+
+
+
+body {
+  font-family: 'Bitcount Grid Single', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-weight: 400;
+  
+
+}
+
+
+.account-button {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+  border: none;
+  width: 40px;      
+  height: 40px;     
+  border-radius: 50%; 
+  display: flex;    
+  justify-content: center;
+  align-items: center;
+  font-size: 18px; 
+  cursor: pointer;
+  padding: 0;   
+  background-color: transparent;    
+}
+
+/* Account button top-right */
+.account-button.top-right {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  background: #4ade80;
+  color: #111;
+  font-size: 18px;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  z-index: 10;
+  transition: background 0.3s;
+}
+
+.account-button.top-right:hover {
+  background: #4ade80;
+}
+
+
+.path-container {
+  margin-top: 120px; /* Adjust based on navbar height */
+  text-align: center
+}
+
+h1 {
+  color: #2d3748;
+  text-align: left;
+  margin-top: 30px;
+  
+  
+}
+
+/* ===== Path Container ===== */
+.path-container {
+  padding: 50px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* ===== Lesson Buttons Row ===== */
+.lesson-buttons-row {
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: auto;
+  padding: 30px 20px;
+  gap: 50px;
+  scroll-behavior: smooth;
+  flex-wrap: nowrap;
+  margin-top: 40px;
+  position: relative;
+  align-items: center;
+  width: 100%;
+}
+
+/* Custom scrollbar */
+.lesson-buttons-row::-webkit-scrollbar {
+  height: 8px;
+}
+
+.lesson-buttons-row::-webkit-scrollbar-thumb {
+  background-color: #d1d1d1;
+  border-radius: 10px;
+}
+
+
+/* ===== Lesson Button Node ===== */
+.lesson-node {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.lesson-node:hover {
+  transform: scale(1.1);
+}
+
+/* ===== Step Circle ===== */
+.lesson-node .step-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4ade80;
+  color: white;
+  font-weight: bold;
+}
+
+.lesson-node .step-circle.locked {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.lesson-node .step-circle.current {
+  border: 3px solid #50C878;
+}
+
+/* ===== Fill inside circle ===== */
+.lesson-node .fill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #2f855a;
+  border-radius: 50% 50% 0 0;
+  transition: height 0.3s;
+  z-index: 0;
+}
+
+/* ===== Step Label ===== */
+.lesson-node .step-label {
+  margin-top: 5px;
+  font-size: 12px;
+  text-align: center;
+  color: #2d3748;
+}
+
+/* ===== Zig-Zag offsets ===== */
+.lesson-node.offset-0 {
+  transform: translateY(0px);
+}
+.lesson-node.offset-1 {
+  transform: translateY(10px);
+}
+.lesson-node.offset-2 {
+  transform: translateY(20px);
+}
+.lesson-node.offset-3 {
+  transform: translateY(10px);
+}
+
+/* ===== Optional: Connector Lines ===== */
+.lesson-node::after {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 100%;
+  width: 20px;
+  height: 4px;
+  background-color: #e5e7eb;
+  z-index: -1;
+}
+
+.lesson-node:last-child::after {
+  display: none;
+}
+
+
+/* Sidebar layout */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 200px;
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+  color: white;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar ul li {
+  width: 100%;
+}
+
+.sidebar ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: left;
+  transition: background 0.3s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a#current {
+  background-color: #4ade80;
+  color: #111;
+}
+
+.sidebar ul li.current a {
+  background-color: #4ade80; /* same as hover */
+  color: black;
+
+ 
+}
+
+.account-button {
+  background: #4ade80;
+  border: none;
+  color: #111;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* Adjust main content to make space for sidebar */
+.path-container {
+  margin-left: 220px; /* space for sidebar */
+  padding: 40px;
+}
+
