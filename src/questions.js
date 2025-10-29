@@ -2,7 +2,7 @@ export const questions = [
   { id: 1, question: "What does HTML stand for?", answer: "HyperText Markup Language" },
   { id: 2, question: "What does CSS stand for?", answer: "Cascading Style Sheets" },
   { id: 3, question: "This is your code editor, type 'Welcome to Code4Change'", answer: "Welcome to Code4Change" },
-  { id: 4, question: "Turn 'Welcome to Code4Change' into an h1 element.", answer: "<h1>Welcome to freeCodeCamp</h1>" },
+  { id: 4, question: "Turn 'Welcome to Code4Change' into an h1 element.", answer: "<h1>Welcome to Code4Change</h1>" },
   { id: 5, question: "Turn 'Full Stack Curriculum' text into an h2 element.", answer: "<h2>Full Stack Curriculum</h2>" },
   { id: 6, question: "Turn 'Learn the skills to become a full stack developer' into a paragraph element.", answer: "<p>Learn the skills to become a full stack developer</p>" },
   { id: 7, question: "What does RAM stand for?", answer: "Random Access Memory" },
